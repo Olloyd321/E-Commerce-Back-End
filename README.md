@@ -5,6 +5,8 @@
 
 This repo was created for the E-Commerce back-end project for businesses that need E-Commerce backend tech"
 
+[Walkthrough Video](./assets/e-commerce%20backend%20init%20video.mp4)
+
 ## Table of Contents
 
 * [Installation](#installation) 
