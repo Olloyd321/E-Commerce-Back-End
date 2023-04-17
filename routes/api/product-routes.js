@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
     ]
   })
   .then(function(data){
+    console.log(data);
     res.json(data);
   })
   // find all products

@@ -20,27 +20,27 @@ Product.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    category_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'category',
+        key: 'id',
+      },
+    },
+    stock: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        max: 10,
+        isInt: true,
+      }
+    },
     price: {
       type: DataTypes.DECIMAL,
       allowNull: false,
       // validate syntax right???
       validate: {
         isDecimal: true,
-      },
-      stock: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        validate: {
-          max: 10,
-          isInt: true,
-        }
-      },
-      category_id: {
-        type: DataTypes.INTEGER,
-        references: {
-          model: 'Category',
-          key: 'id',
-        },
       },
     }
   },
